@@ -1,3 +1,5 @@
+install ansiweather
+
 copy weatherclip10k to /usr/bin/weatherclip10k
 edit weatherclip10k to set your city
 
