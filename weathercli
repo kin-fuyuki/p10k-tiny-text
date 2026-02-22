@@ -1,0 +1,12 @@
+#!/bin/sh
+city="put your city here"
+while :
+do
+	weather_raw=$(ansiweather -l $city -u metric -s true)
+	temp=$(echo "$weather_raw" | grep -oP '\d+(?= °C)')
+	wind=$(echo "$weather_raw" | grep -oP '\d+(\.\d+)?(?= m/s)')
+	humidity=$(echo "$weather_raw" | grep -oP '\d+(?=%)')
+	path=/tmp/weatherzshresult.txt
+	echo ${temp}°c ${wind}m/s ${humidity}% > $path
+	sleep 60
+done
