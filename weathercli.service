@@ -1,0 +1,13 @@
+#put this inside /etc/systemd/system/
+#then sudo systemctl daemon-reload
+#sudo systemctl disable --now weathercli
+[Unit]
+Description=weather p10k updater
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/weatherclip10k
+
+[Install]
+WantedBy=multi-user.target
