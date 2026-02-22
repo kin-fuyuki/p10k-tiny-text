@@ -1,3 +1,6 @@
+<img width="1285" height="150" alt="image" src="https://github.com/user-attachments/assets/aa44265a-e315-4b08-8887-9c4a01383674" />
+
+
 install ansiweather
 
 ...
